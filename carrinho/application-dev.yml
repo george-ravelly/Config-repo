@@ -2,3 +2,9 @@ server:
   port: 8083
   servlet:
     context-path: /carrinho
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      request-connect-timeout: 5000
+      request-read-timeout: 5000
