@@ -3,6 +3,14 @@ server:
   servlet:
     context-path: /catalogo
 spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5434/loja
+    username: postgres
+    password: sgeopass
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
   cloud:
     config:
       uri: http://localhost:8888
