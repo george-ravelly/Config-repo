@@ -20,3 +20,9 @@ spring:
       uri: http://localhost:8888
       request-connect-timeout: 5000
       request-read-timeout: 5000
+eureka:
+  client:
+    instance:
+      preferIpAdress: true
+    registerWithEureka: true
+    fetchRegistry: true
