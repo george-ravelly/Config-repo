@@ -1,7 +1,7 @@
 server:
-  port: 8081
+  port: 8084
   servlet:
-    context-path: /catalogo
+    context-path: /img
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
@@ -14,14 +14,15 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-        ddlAuto: create
+        ddl-auto: create
   cloud:
     config:
       uri: http://localhost:8888
       request-connect-timeout: 5000
       request-read-timeout: 5000
-  flyway:
-    baselineOnMigrate: true
+    loadbalancer:
+      ribbon:
+        enabled: false
 eureka:
   client:
     instance:
