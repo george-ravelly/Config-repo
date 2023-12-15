@@ -9,7 +9,7 @@ spring:
     password: 1234
     url: jdbc:postgresql://localhost:5432/loja
   jpa:
-#   generate-ddl: true
+    generate-ddl: true
     show-sql: true
     properties:
       hibernate:
@@ -21,7 +21,7 @@ spring:
       request-connect-timeout: 5000
       request-read-timeout: 5000
   flyway:
-    baselineOnMigrate: false
+    baselineOnMigrate: true
 eureka:
   client:
     instance:
