@@ -4,7 +4,7 @@ server:
     context-path: /catalogo
 spring:
   datasource:
-    driverClassName: org.postgresql.Driver
+    driver-class-name: org.postgresql.Driver
     username: postgres
     password: 1234
     url: jdbc:postgresql://localhost:5432/loja
@@ -21,7 +21,7 @@ spring:
       request-connect-timeout: 5000
       request-read-timeout: 5000
   flyway:
-    baselineOnMigrate: true
+    baselineOnMigrate: false
 eureka:
   client:
     instance:
