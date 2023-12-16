@@ -16,6 +16,8 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         ddl-auto: update
   cloud:
+    discovery:
+      enabled: true
     config:
       uri: http://localhost:8888
       request-connect-timeout: 5000
