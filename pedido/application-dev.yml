@@ -24,8 +24,8 @@ spring:
       request-read-timeout: 5000
 eureka:
   instance:
-    hostname: localhost
-    # preferIpAdress: true
+    # hostname: localhost
+    preferIpAdress: true
   client:
     registerWithEureka: true
     fetchRegistry: true
