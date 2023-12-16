@@ -24,7 +24,6 @@ spring:
 eureka:
   client:
     instance:
-      hostname: localhost
       preferIpAdress: true
     registerWithEureka: true
     fetchRegistry: true
