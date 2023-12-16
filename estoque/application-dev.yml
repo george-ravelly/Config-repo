@@ -1,0 +1,30 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /estoque
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: 1234
+    url: jdbc:postgresql://localhost:5432/estoque?createDatabaseIfNotExist=true
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        ddl-auto: update
+  cloud:
+    config:
+      uri: http://localhost:8888
+      request-connect-timeout: 5000
+      request-read-timeout: 5000
+eureka:
+  client:
+    instance:
+      preferIpAdress: true
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
