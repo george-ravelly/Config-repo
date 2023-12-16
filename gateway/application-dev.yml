@@ -1,9 +1,9 @@
 server:
   port: 8080
 eureka:
+  instance:
+    preferIpAdress: true
   client:
-    instance:
-      preferIpAdress: true
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:

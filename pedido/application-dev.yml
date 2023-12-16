@@ -21,9 +21,9 @@ spring:
       request-connect-timeout: 5000
       request-read-timeout: 5000
 eureka:
+  instance:
+    preferIpAdress: true
   client:
-    instance:
-      preferIpAdress: true
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
