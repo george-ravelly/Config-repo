@@ -25,6 +25,7 @@ spring:
       label: main
 eureka:
   instance:
+    hostname: localhost
     preferIpAdress: true
   client:
     registerWithEureka: true
