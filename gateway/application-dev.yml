@@ -10,9 +10,10 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 management:
-  endpoints:
+  endpoint:
     gateway:
       enabled: true
+  endpoints:
     web:
       exposure:
-        include: health,info,refresh,routes
+        include: "*"
