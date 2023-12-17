@@ -1,0 +1,35 @@
+server:
+  port: 8089
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: 1234
+    url: jdbc:postgresql://localhost:5432/usuario
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        ddl-auto: update
+  cloud:
+    discovery:
+      enabled: true
+    config:
+      uri: http://locahost:8888
+      request-connect-timeout: 5000
+      request-read-timeout: 5000
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetch-registry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
