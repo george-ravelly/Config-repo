@@ -24,6 +24,8 @@ spring:
       definition: criarEstoqueProduto;updateEstoqueProduto
     stream:
       bindings:
+        criarEstoqueProduto-in-0:
+          destination: criar.estoque.produto.entrada
         criarEstoqueProduto-out-0:
           destination: criar.estoque.produto.saida
     discovery:
