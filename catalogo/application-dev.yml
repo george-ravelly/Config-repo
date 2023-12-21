@@ -20,6 +20,14 @@ spring:
     host: localhost
     connection-timeout: 5s
   cloud:
+    function:
+      definition: criarProduto
+    stream:
+      bindings:
+        criarProduto-in-0:
+          destination: criar.produto.entrada
+        criarProduto-out-0:
+          destination: criar.produto.saida
     discovery:
       enabled: true
     config:
