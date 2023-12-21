@@ -22,7 +22,7 @@ spring:
   cloud:
     stream:
       function:
-        definition: criarCliente,getCliente
+        definition: criarCliente
       bindings:
         criarCliente-in-0:
           destination: criar.cliente.entrada.dados
