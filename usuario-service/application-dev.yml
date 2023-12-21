@@ -23,6 +23,9 @@ spring:
     stream:
       function:
         definition: criarCliente
+      bindings:
+        criarCliente-in-0:
+          destination: criar.cliente.entrada.dados
     discovery:
       enabled: true
     config:
