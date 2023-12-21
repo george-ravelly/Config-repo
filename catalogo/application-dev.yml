@@ -21,7 +21,7 @@ spring:
     connection-timeout: 5s
   cloud:
     function:
-      definition: produtobycode,produtos
+      definition: produtobycode;estoqueprodutobycode;produtos
     discovery:
       enabled: true
     config:
