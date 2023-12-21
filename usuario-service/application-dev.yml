@@ -20,8 +20,9 @@ spring:
     host: localhost
     connection-timeout: 5s
   cloud:
-    function:
-      definition: clientebycode
+    stream:
+      function:
+        definition: clientebycode
     discovery:
       enabled: true
     config:
