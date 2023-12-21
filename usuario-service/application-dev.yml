@@ -22,7 +22,7 @@ spring:
   cloud:
     stream:
       function:
-        definition: clientebycode
+        definition: criarCliente
     discovery:
       enabled: true
     config:
