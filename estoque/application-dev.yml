@@ -37,3 +37,31 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+resilience4j:
+  circuitBreaker:
+    instances:
+      circuitBreakerCatalogo:
+        register-health-indicator: true
+        wait-duration-in-open-state:
+          seconds: 10
+        record-exceptions:
+          - feign.FeignException.ServiceUnavailable
+          - feign.FeignException.InternalServerError
+          - java.util.concurrent.TimeoutException
+          - java.io.IOException
+          - feign.FeignException.FeignServerException
+          - org.springframework.web.client.ResourceAccessException
+  bulkhead:
+    instances:
+      bulkHeadCatalogo:
+        max-wait-duration:
+          seconds: 0.002
+        max-concurrent-calls: 50
+  retry:
+    instances:
+      retryCatalogo:
+        max-attempts: 10
+        wait-duration:
+          seconds: 10
+        retry-exceptions:
+          - java.util.concurrent.TimeoutException
