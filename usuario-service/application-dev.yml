@@ -26,6 +26,8 @@ spring:
       bindings:
         criarCliente-in-0:
           destination: criar.cliente.entrada.dados
+        criarCliente-out-0:
+          destination: criar.cliente.saida.dados
         getCliente-in-0:
           destination: buscar.cliente.id.entrada.dados
         getCliente-out-0:
