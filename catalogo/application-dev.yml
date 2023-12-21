@@ -20,9 +20,6 @@ spring:
     host: localhost
     connection-timeout: 5s
   cloud:
-    stream:
-      function:
-        definition: produtobycode;estoqueprodutobycode;produtos;criarProduto
     discovery:
       enabled: true
     config:
