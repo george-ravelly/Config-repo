@@ -21,7 +21,8 @@ spring:
     connection-timeout: 5s
   cloud:
     function:
-      definition: criarCliente,getCliente
+      definition: criarCliente
+      definition: getCliente
     stream:
       bindings:
         criarCliente-in-0:
