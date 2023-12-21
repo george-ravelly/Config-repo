@@ -22,7 +22,7 @@ spring:
   cloud:
     stream:
       function:
-        definition: produtobycode;estoqueprodutobycode;produtos
+        definition: produtobycode;estoqueprodutobycode;produtos;criarProduto
     discovery:
       enabled: true
     config:
