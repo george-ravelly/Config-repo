@@ -21,7 +21,7 @@ spring:
     connection-timeout: 5s
   cloud:
     function:
-      definition: pedidobycode,pedidos
+      definition: cadastrarVenda;updateVenda;calcelarVenda;
     discovery:
       enabled: true
     config:
