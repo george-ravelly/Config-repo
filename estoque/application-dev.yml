@@ -35,7 +35,7 @@ spring:
         validarEAtualizarEstoqueVenda-in-0:
           destination: validar.atualizar.estoque.venda.entrada
         validarEAtualizarEstoqueVenda-out-0:
-          destination: validar.atualizar.estoque.venda.saida
+          destination: cancelar.venda.entrada
     discovery:
       enabled: true
     config:
