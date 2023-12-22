@@ -19,6 +19,9 @@ spring:
     port: 5672
     host: localhost
     connection-timeout: 5s
+  kafka:
+    bootstrap-servers: localhost:9092
+
   cloud:
     function:
       definition: criarCliente;getCliente;clienteValidation;
