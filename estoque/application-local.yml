@@ -21,7 +21,7 @@ spring:
     connection-timeout: 5s
   cloud:
     function:
-      definition: criarEstoqueProduto;updateEstoqueProduto;validarEstoqueVenda;
+      definition: criarEstoqueProduto;updateEstoqueProduto;validarEAtualizarEstoqueVenda;
     stream:
       bindings:
         criarEstoqueProduto-in-0:
