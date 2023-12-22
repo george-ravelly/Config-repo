@@ -36,6 +36,10 @@ spring:
           destination: cancelar.venda.entrada
         cancelarVenda-out-0:
           destination: cancelar.venda.saida
+        venda-in-0:
+          destination: get.venda.entrada
+        venda-out-0:
+          destination: get.venda.saida
     discovery:
       enabled: true
     config:
