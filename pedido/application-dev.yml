@@ -21,7 +21,7 @@ spring:
     connection-timeout: 5s
   cloud:
     function:
-      definition: cadastrarVenda;updateVenda;cancelarVenda;
+      definition: cadastrarVenda;updateVenda;cancelarVenda;venda;
     stream:
       bindings:
         cadastrarVenda-in-0:
