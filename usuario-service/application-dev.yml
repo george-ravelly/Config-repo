@@ -32,6 +32,10 @@ spring:
           destination: buscar.cliente.id.entrada.dados
         getCliente-out-0:
           destination: buscar.cliente.id.saida.dados
+        clienteValidation-in-0:
+          destination: cliente.valido.entrada
+        clienteValidation-out-0:
+          destination: cliente.valido.saida
     discovery:
       enabled: true
     config:

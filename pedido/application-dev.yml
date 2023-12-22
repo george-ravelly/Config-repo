@@ -22,6 +22,20 @@ spring:
   cloud:
     function:
       definition: cadastrarVenda;updateVenda;calcelarVenda;
+    stream:
+      bindings:
+        cadastrarVenda-in-0:
+          destination: cad.venda.entrada
+        cadastrarVenda-out-0:
+          destination: cad.venda.saida
+        updateVenda-in-0:
+          destination: up.venda.entrada
+        updateVenda-out-0:
+          destination: up.venda.saida
+        cancelarVenda-in-0:
+          destination: cancelar.venda.entrada
+        cancelarVenda-out-0:
+          destination: cancelar.venda.saida
     discovery:
       enabled: true
     config:
